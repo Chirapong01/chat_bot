@@ -57,6 +57,7 @@ VERIFY_TOKEN = "pass1234"
 
 @app.route("/", methods=['POST'])
 def fbwebhook():
+    print(request)
     data = request.get_json()
     print('data is: ',data)
     try:
